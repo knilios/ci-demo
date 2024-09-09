@@ -14,7 +14,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: [ubuntu-latest, windows-lastest, macos-lastest]
+    runs-on: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
     - uses: actions/checkout@v4
