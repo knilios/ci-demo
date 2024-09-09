@@ -36,8 +36,7 @@ def variance(data):
     if n==0:
         raise ValueError("List must contain at least one value")
     avg = average(data)
-    _variance = sum( (x-avg)**2 for x in data )/n
-    return round(_variance, 10)
+    return sum( (x-avg)**2 for x in data )/n
 
 
 def stdev(data):
