@@ -1,3 +1,5 @@
+from math import sqrt
+
 def average(data):
     """Return the average of a list of numeric values in data."""
     if len(data)==0:
@@ -34,7 +36,8 @@ def variance(data):
     if n==0:
         raise ValueError("List must contain at least one value")
     avg = average(data)
-    return sum( [(x-avg)**2 for x in data] )/n
+    _variance = sum( (x-avg)**2 for x in data )/n
+    return round(_variance, 10)
 
 
 def stdev(data):

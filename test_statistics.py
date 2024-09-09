@@ -1,5 +1,5 @@
 from unittest import TestCase
-from statistics import variance, stdev
+from statistics_new import variance, stdev
 from math import sqrt
 
 class StatisticsTest(TestCase):
