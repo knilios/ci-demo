@@ -25,20 +25,20 @@ class StatisticsTest(TestCase):
         self.assertEqual(2.0, stdev([1, 5]))
         # variance([0, 0.5, 1, 1.5, 2.0]) is 0.5
         self.assertEqual(sqrt(0.5), stdev([0, 0.5, 1, 1.5, 2]))
-        
+
     def test_stdev_empty_list(self):
         """Test stdev with an empty list, should raise an error"""
         with self.assertRaises(ValueError):
             stdev([])
-        
+
     def test_average_with_empty_list(self):
         """Test average with an empty list"""
         with self.assertRaises(ValueError):
             average([])
-        
+
     def test_average(self):
         """Test average with a list with value"""
-        self.assertAlmostEqual(5, average([1,2,3,4,5,6,7,8,9]))
+        self.assertAlmostEqual(5, average([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
 
 # if __name__ == '__main__':
