@@ -1,0 +1,6 @@
+cover_pylib = False
+
+branch = True
+
+omit = test_statistics.py
+
