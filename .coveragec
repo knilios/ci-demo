@@ -1,3 +1,7 @@
+[run]
+
+source = test_statistics.py
+
 cover_pylib = False
 
 branch = True
