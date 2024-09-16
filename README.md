@@ -2,6 +2,7 @@ Continuous Integration Demo
 ===========================
 [![Flake8-Test](https://github.com/knilios/ci-demo/actions/workflows/flake8-test.yml/badge.svg)](https://github.com/knilios/ci-demo/actions/workflows/flake8-test.yml)
 [![pytest test](https://github.com/knilios/ci-demo/actions/workflows/python-app.yml/badge.svg)](https://github.com/knilios/ci-demo/actions/workflows/python-app.yml)
+[![Codecov test](https://github.com/knilios/ci-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/knilios/ci-demo/actions/workflows/ci.yml)
 
 This project demonstrates use of Github Actions to build and test a Python project.  
 

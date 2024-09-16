@@ -13,7 +13,10 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install dependencies
-        run: if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        run: 
+            pip install pytest
+            pip install coverage
+            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run tests and collect coverage
         run: pytest --cov app ${{ env.CODECOV_ATS_TESTS }}
       - name: Upload coverage to Codecov
