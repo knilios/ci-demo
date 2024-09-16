@@ -14,8 +14,6 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: 
-            pip install pytest
-            pip install coverage
             pip install pytest-cov
       - name: Run tests and collect coverage
         run: pytest --cov app ${{ env.CODECOV_ATS_TESTS }}
